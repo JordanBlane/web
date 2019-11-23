@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shells</title>
+    <title>Home</title>
 </head>
 <body>
-    <div class='menu'>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Contact us</a></li>
-        </ul>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="products.html"><li>Products</li></a>
+            <a href="aboutus.html"><li>About</li></a>
+            <a href="contactus.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+    <div class='header'>
+        <h2>Sarah Jane's Shells And Bottles</h2>
+    </div>
+    <div class="CSSgal">
+
+            <!-- Don't wrap targets in parent -->
+            <s id="s1"></s> 
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+          
+            <div class="slider">
+              <div style="background-image:url(images/bottle1.png);">
+                  </div>
+              <div style="background-image:url(images/bottle2.png)">
+                  </div>
+              <div style="background-image:url(images/bottle3.png)">
+                  </div>
+              <div style="background-image:url(images/bottle4.png)">
+                  </div>
+            </div>
+            
+            <div class="prevNext">
+              <div><a href="#s4"></a><a href="#s2"></a></div>
+              <div><a href="#s1"></a><a href="#s3"></a></div>
+              <div><a href="#s2"></a><a href="#s4"></a></div>
+              <div><a href="#s3"></a><a href="#s1"></a></div>
+            </div>        
+          </div>
+    <div class='info'>
+        <h2>About us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est et reprehenderit, deserunt, eaque exercitationem voluptatibus ratione voluptate harum maxime accusantium quibusdam eveniet reiciendis iure alias corporis unde aspernatur beatae ducimus.</p>
     </div>
 </body>
 </html>
